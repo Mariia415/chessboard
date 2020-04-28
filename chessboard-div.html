@@ -4,52 +4,41 @@
    <title>ChessBoard</title> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
-           div .row{
+           div.row{
                float: left;
            }
-           div .column{
+           div.column{
                width: 50px;
                height: 50px;
                float: left;
           }
-           div .white{
+           div.white{
                background-color:#F8EFBA;
-           } 
-           div .black{
-               background-color:#9c5518;
-           }
-           div .numbers-white{
-               text-align: left;
-               color: #F8EFBA;
-           }
-           div .numbers-black{
-               text-align: left;
                color: #9c5518;
+           } 
+           div.black{
+               background-color:#9c5518;
+               color:#F8EFBA; 
            }
-           div .bottom{
+           div.numbers{
+               text-align: left;   
+           }
+           div.first{
                 position: relative;
            }
-           div .letters-white{
+           div.label{
                 position: absolute;
                 bottom: 0;
                 right: 5px;
                 font-size: 120%;
-                color:#F8EFBA;
-           }
-            div .letters-black{
-                position: absolute;
-                bottom: 0;
-                right: 5px;
-                font-size: 120%;
-                color:#9c5518;
-           }
-    </style>
+          }
+        </style>
 </head>
     <body>
     <div style="width: 400px; height:400px; border: 3px solid #9c5518; margin: 100px auto; text-align: center; box-shadow: 0 15px 20px 10px rgba(156, 85, 24, 0.77);" > 
  
     <div class="row">
-            <div class="column white numbers-black">8</div>
+            <div class="column white numbers">8</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -59,7 +48,7 @@
             <div class="column black"></div>
      </div>  
      <div class="row">
-            <div class="column black numbers-white">7</div>
+            <div class="column black numbers">7</div>
             <div class="column white"></div>
             <div class="column black"></div>
             <div class="column white"></div>
@@ -69,7 +58,7 @@
             <div class="column white"></div>
       </div>    
       <div class="row">
-            <div class="column white numbers-black">6</div>
+            <div class="column white numbers">6</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -79,7 +68,7 @@
             <div class="column black"></div>
        </div>    
        <div class="row">
-            <div class="column black numbers-white">5</div>
+            <div class="column black numbers">5</div>
             <div class="column white"></div>
             <div class="column black"></div>
             <div class="column white"></div>
@@ -89,7 +78,7 @@
             <div class="column white"></div>
        </div>    
        <div class="row">
-            <div class="column white numbers-black">4</div>
+            <div class="column white numbers">4</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -99,7 +88,7 @@
             <div class="column black"></div>
         </div>     
         <div class="row">
-            <div class="column black numbers-white">3</div>
+            <div class="column black numbers">3</div>
             <div class="column white"></div>
             <div class="column black"></div>
             <div class="column white"></div>
@@ -109,7 +98,7 @@
             <div class="column white"></div>
         </div>     
         <div class="row">
-            <div class="column white numbers-black">2</div>
+            <div class="column white numbers">2</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -120,36 +109,36 @@
         </div>
            
         <div class="row">
-            <div class="column bottom black numbers-white ">1
-                 <div class="letters-white">a</div> 
+            <div class="column first black numbers">1
+                 <div class="label">a</div> 
               </div> 
 
-              <div class="column bottom white">
-                  <div class="letters-black">b</div>
+              <div class="column first white">
+                  <div class="label">b</div>
               </div>
 
-              <div class="column bottom black">
-                    <div class="letters-white">c</div> 
+              <div class="column first black">
+                    <div class="label">c</div> 
               </div>
 
-              <div class="column bottom white">
-                    <div class="letters-black">d</div> 
+              <div class="column first white">
+                    <div class="label">d</div> 
               </div>
 
-              <div class="column bottom black">
-                    <div class="letters-white">e</div> 
+              <div class="column first black">
+                    <div class="label">e</div> 
               </div>
 
-              <div class="column bottom white">
-                    <div class="letters-black">f</div> 
+              <div class="column first white">
+                    <div class="label">f</div> 
               </div>
 
-              <div class="column bottom black">
-                    <div class="letters-white">g</div> 
+              <div class="column first black">
+                    <div class="label">g</div> 
               </div>
 
-              <div class="column bottom white">
-                    <div class="letters-black">h</div> 
+              <div class="column first white">
+                    <div class="label">h</div> 
               </div>
          </div>
       </div>
