@@ -4,6 +4,13 @@
    <title>ChessBoard</title> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
+           .board{
+               width: 400px;
+               height:400px;
+               border: 3px solid #9c5518;
+               margin: 100px auto;
+               text-align: center; 
+           }
            div.row{
                float: left;
            }
@@ -20,7 +27,7 @@
                background-color:#9c5518;
                color:#F8EFBA; 
            }
-           div.numbers{
+           div.number{
                text-align: left;   
            }
            div.first{
@@ -35,10 +42,10 @@
         </style>
 </head>
     <body>
-    <div style="width: 400px; height:400px; border: 3px solid #9c5518; margin: 100px auto; text-align: center; box-shadow: 0 15px 20px 10px rgba(156, 85, 24, 0.77);" > 
+    <div class="board"> 
  
     <div class="row">
-            <div class="column white numbers">8</div>
+            <div class="column white number">8</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -48,7 +55,7 @@
             <div class="column black"></div>
      </div>  
      <div class="row">
-            <div class="column black numbers">7</div>
+            <div class="column black number">7</div>
             <div class="column white"></div>
             <div class="column black"></div>
             <div class="column white"></div>
@@ -58,7 +65,7 @@
             <div class="column white"></div>
       </div>    
       <div class="row">
-            <div class="column white numbers">6</div>
+            <div class="column white number">6</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -68,7 +75,7 @@
             <div class="column black"></div>
        </div>    
        <div class="row">
-            <div class="column black numbers">5</div>
+            <div class="column black number">5</div>
             <div class="column white"></div>
             <div class="column black"></div>
             <div class="column white"></div>
@@ -78,7 +85,7 @@
             <div class="column white"></div>
        </div>    
        <div class="row">
-            <div class="column white numbers">4</div>
+            <div class="column white number">4</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -88,7 +95,7 @@
             <div class="column black"></div>
         </div>     
         <div class="row">
-            <div class="column black numbers">3</div>
+            <div class="column black number">3</div>
             <div class="column white"></div>
             <div class="column black"></div>
             <div class="column white"></div>
@@ -98,7 +105,7 @@
             <div class="column white"></div>
         </div>     
         <div class="row">
-            <div class="column white numbers">2</div>
+            <div class="column white number">2</div>
             <div class="column black"></div>
             <div class="column white"></div>
             <div class="column black"></div>
@@ -109,7 +116,7 @@
         </div>
            
         <div class="row">
-            <div class="column first black numbers">1
+            <div class="column first black number">1
                  <div class="label">a</div> 
               </div> 
 
@@ -117,7 +124,7 @@
                   <div class="label">b</div>
               </div>
 
-              <div class="column first black">
+              <div class="column first black lable">
                     <div class="label">c</div> 
               </div>
 
