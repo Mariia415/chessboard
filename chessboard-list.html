@@ -3,172 +3,154 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-
-          
-          .section{                
+            .section{                
                width: 60%;
-               margin:0 20%;
+               margin: 0 20%;               
               }
-            
-            ul{
+            ul.row{
                 display:inline-block;
                 width: 100%;
                 list-style-type: none;
                 margin: -2px;
             }
-            
-            li{
+            li.col{
                 float: left;
                 width: 50px;
                 height: 50px;
-                border: 1px solid #000;
                 text-align: center;
              }
-            
-            .symbols li{
-                padding-top: 5px;
-                font-size: 2vw;    
-            }
-            @media (max-width:1020px){
-                li{
-                    width: 45px;
-                    height: 45px;
-                }
-                  
-            }
-             @media (max-width:800px){
-                li{
-                    width: 40px;
-                    height: 40px;
-                }
+             li.white{background-color: #fff; border: 1px solid #000;}
+             li.black{background-color: #c3bebe; border: 1px solid #000;}
+             li.symbol{font-size: 200%;}
+             li.letter{font-size: 2vw; }
+             li.number{ font-size: 2vw;}
         </style>
-    </head>
+    </head> 
     
     <body>
       <div class="section">
-          <ul class="symbols">
-            <li style="border: 0;"></li>
-            <li style="border: 0;">A</li>
-            <li style="border: 0;">B</li>
-            <li style="border: 0;">C</li>
-            <li style="border: 0;">D</li>
-            <li style="border: 0;">E</li>
-            <li style="border: 0;">F</li>
-            <li style="border: 0;">G</li>
-            <li style="border: 0;">H</li>
-            <li style="border: 0;" ></li>
-        </ul> 
-        <ul class="symbols"> 
-            <li style="border: 0;" >8</li>
-            <li >&#9820;</li>
-            <li style="background-color: #c3bebe;" >&#9822;</li>
-            <li >&#9821;</li>
-            <li style="background-color: #c3bebe;">&#9819;</li>
-            <li >&#9820;</li>
-            <li style="background-color: #c3bebe;">&#9821;</li>
-            <li >&#9822;</li>
-            <li style="background-color: #c3bebe;">&#9820;</li>
-            <li style="border: 0;">8</li>
-        </ul>
-        <ul class="symbols">
-            <li style="border: 0;">7</li>
-            <li style="background-color: #c3bebe;">&#9823;</li>
-            <li>&#9823;</li>
-            <li style="background-color: #c3bebe;" >&#9823;</li>
-            <li>&#9823;</li>
-            <li style="background-color: #c3bebe;">&#9823;</li>
-            <li>&#9823;</li>
-            <li style="background-color: #c3bebe;">&#9823;</li>
-            <li>&#9823;</li>
-            <li style="border: 0;">7</li>
-        </ul>
-        <ul class="symbols">
-            <li style="border: 0;">6</li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li> 
-            <li style="background-color: #c3bebe;"></li>
-            <li style="border: 0;">6</li>      
-        </ul>
-        <ul class="symbols" >
-            <li style="border: 0;">5</li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="border: 0;">5</li>
-        </ul>
-        <ul class="symbols">
-            <li style="border: 0;">4</li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="border: 0;">4</li>
-        </ul>
-        <ul class="symbols">
-            <li style="border: 0;">3</li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="background-color: #c3bebe;"></li>
-            <li style="background-color: #fff;"></li>
-            <li style="border: 0;">3</li>
-        </ul>
-        <ul class="symbols">
-            <li style="border: 0;">2</li>
-            <li >&#9817;</li>
-            <li style="background-color: #c3bebe;">&#9817;</li>
-            <li >&#9817;</li>
-            <li style="background-color: #c3bebe;">&#9817;</li>
-            <li >&#9817;</li>
-            <li style="background-color: #c3bebe;">&#9817;</li>
-            <li >&#9817;</li>
-            <li style="background-color: #c3bebe;">&#9817;</li>
-            <li style="border: 0;">2</li>
-        </ul>
-        <ul class="symbols">
-            <li style="border: 0">1</li>
-            <li style="background-color: #c3bebe;">&#9814;</li>
-            <li >&#9816;</li>
-            <li style="background-color: #c3bebe;">&#9815;</li>
-            <li >&#9813;</li>
-            <li style="background-color: #c3bebe;">&#9812;</li>
-            <li >&#9815;</li>
-            <li style="background-color: #c3bebe;">&#9816;</li>
-            <li >&#9814;</li>        
-            <li style="border: 0;">1</li>
-        </ul>
-         <ul class="symbols">
-            <li style="border: 0;"></li>
-            <li style="border: 0;">A</li>
-            <li style="border: 0;">B</li>
-            <li style="border: 0;">C</li>
-            <li style="border: 0;">D</li>
-            <li style="border: 0;">E</li>
-            <li style="border: 0;">F</li>
-            <li style="border: 0;">G</li>
-            <li style="border: 0;">H</li>
-            <li style="border: 0;" ></li>
-        </ul> 
-    </div>      
-      
-</body>
+            <ul class="row">
+                <li class="col letter"></li>
+                <li class="col letter">A</li>
+                <li class="col letter">B</li>
+                <li class="col letter">C</li>
+                <li class="col letter">D</li>
+                <li class="col letter">E</li>
+                <li class="col letter">F</li>
+                <li class="col letter">G</li>
+                <li class="col letter">H</li>
+                <li class="col letter" ></li>
+            </ul> 
+            <ul class="row"> 
+                <li class="col number" >8</li>
+                <li class="col white symbol" >&#9820;</li>
+                <li class="col black symbol" >&#9822;</li>
+                <li class="col white symbol">&#9821;</li>
+                <li class="col black symbol">&#9819;</li>
+                <li class="col white symbol">&#9820;</li>
+                <li class="col black symbol">&#9821;</li>
+                <li class="col white symbol">&#9822;</li>
+                <li class="col black symbol">&#9820;</li>
+                <li class="col number">8</li>
+            </ul>
+            <ul class="row">
+                <li class="col number">7</li>
+                <li class="col black symbol">&#9823;</li>
+                <li class="col white symbol">&#9823;</li>
+                <li class="col black symbol">&#9823;</li>
+                <li class="col white symbol">&#9823;</li>
+                <li class="col black symbol">&#9823;</li>
+                <li class="col white symbol">&#9823;</li>
+                <li class="col black symbol">&#9823;</li>
+                <li class="col white symbol">&#9823;</li>
+                <li class="col number">7</li>
+            </ul>
+            <ul class="row ">
+                <li class="col number">6</li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li> 
+                <li class="col black"></li>
+                <li class="col number">6</li>      
+            </ul>
+            <ul class="row" >
+                <li class="col number">5</li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li> 
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col number">5</li>
+            </ul>
+            <ul class="row ">
+                <li class="col number">4</li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li> 
+                <li class="col black"></li>
+                <li class="col number">4</li>      
+            </ul>
+            <ul class="row symbols" >
+                <li class="col number">3</li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col black"></li>
+                <li class="col white"></li> 
+                <li class="col black"></li>
+                <li class="col white"></li>
+                <li class="col number">3</li>
+            </ul>
+            <ul class="row ">
+                <li class="col number">2</li>
+                <li class="col white symbol">&#9817;</li>
+                <li class="col black symbol">&#9817;</li>
+                <li class="col white symbol">&#9817;</li>
+                <li class="col black symbol">&#9817;</li>
+                <li class="col white symbol">&#9817;</li>
+                <li class="col black symbol">&#9817;</li>
+                <li class="col white symbol">&#9817;</li>
+                <li class="col black symbol">&#9817;</li>
+                <li class="number col">2</li>
+            </ul>
+            <ul class="row">
+                <li class="number col">1</li>
+                <li class="col black symbol">&#9814;</li>
+                <li class="col white symbol">&#9816;</li>
+                <li class="col black symbol">&#9815;</li>
+                <li class="col white symbol">&#9813;</li>
+                <li class="col black symbol">&#9812;</li>
+                <li class="col white symbol">&#9815;</li>
+                <li class="col black symbol">&#9816;</li>
+                <li class="col white symbol">&#9814;</li>        
+                <li class="col number">1</li>
+            </ul>
+            <ul class="row">
+                <li class="col letter"></li>
+                <li class="col letter">A</li>
+                <li class="col letter">B</li>
+                <li class="col letter">C</li>
+                <li class="col letter">D</li>
+                <li class="col letter">E</li>
+                <li class="col letter">F</li>
+                <li class="col letter">G</li>
+                <li class="col letter">H</li>
+                <li class="col letter" ></li>
+            </ul> 
+     </div>      
+   </body>
 </html>
 
                    
