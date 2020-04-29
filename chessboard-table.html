@@ -2,150 +2,153 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>            
-            td .white {
-            border: 1px solid #817474;
-            width: 50px;
-            height: 50px;
-            padding: 5px;
-            text-align: center
-        }
-            td .black {
-            border: 1px solid #817474;
-            width: 50px;
-            height: 50px;
-            padding: 5px;
-            text-align: center;
-            background-color: #817474;
-        }
-             
-            th{padding: 10px;}
-            .pawn td{font-size: 180%;}
-            .figure td{font-size: 250%;}
+        <style> 
+            
+            body{
+               width: 500px;
+               margin: 50px auto;
+            }
+             table{border: 3px solid rgba(106, 97, 97, 0.41);}
+             th{background-color: #f7f7f7;}
+             td{
+                border: 1px solid #000;
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+                text-align: center
+            }
+             td.white{background-color:#eaeaea;}
+             td.black{background-color:#6a6161;}
+             .letter th{font-size: 120%;}
+             .number th{font-size: 120%; padding: 0 5px;}
+             .pawn td{font-size: 160%; font-weight: 600;}
+             .figure td{font-size: 230%; font-weight: 700;}
         </style>    
     </head>
     <body>
-        <div style="max-width: 600px; margin: 50px auto;">
-        <table>
-        <tr style="font-size: 120%;"> 
-            <th></th>
-            <th>a</th>
-            <th>b</th>
-            <th>c</th>
-            <th>d</th>
-            <th>e</th>
-            <th>f</th>
-            <th>g</th>
-            <th>h</th>
-        </tr>
-        <tr class="figure">
-            <th style="text-align: end;">8</th>
-            <td class="white">&#9820;</td>
-            <td class="black">&#9822;</td>
-            <td class="white">&#9821;</td>
-            <td class="black">&#9819;</td>
-            <td class="white">&#9818;</td>
-            <td class="black">&#9821;</td>
-            <td class="white">&#9822;</td>
-            <td class="black">&#9820;</td>
-            <th style="text-align: start;">8</th>
-        </tr>
-        <tr class="pawn">
-            <th style="text-align: end;">7</th>
-            <td style="background-color: #817474;">&#9823;</td>
-            <td>&#9823;</td>
-            <td style="background-color: #817474;">&#9823;</td>
-            <td>&#9823;</td>
-            <td style="background-color: #817474;">&#9823;</td>
-            <td>&#9823;</td>
-            <td style="background-color: #817474;">&#9823;</td>
-            <td>&#9823;</td>
-           <th style="text-align: start;">7</th>
-        </tr>
-        <tr>
-            <th style="text-align: end;">6</th>
-            <td></td>
-            <td style="background-color: #817474;" ></td>
-            <td></td>
-            <td style="background-color: #817474;" ></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <th style="text-align: start;">6</th>
-        </tr>
-        <tr>
-            <th style="text-align: end;">5</th>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <th style="text-align: start;">5</th>
-        </tr>
-        <tr>
-            <th style="text-align: end;">4</th>
-            <td></td>
-            <td style="background-color: #817474;" ></td>
-            <td></td>
-            <td style="background-color: #817474;" ></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <th style="text-align: start;">4</th>
-        </tr>
-        <tr>
-            <th style="text-align: end;">3</th>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <td style="background-color: #817474;"></td>
-            <td></td>
-            <th style="text-align: start;">3</th>
-        </tr>
-        <tr class="pawn">
-            <th style="text-align: end;">2</th>
-            <td>&#9817;</td>
-            <td style="background-color: #817474;">&#9817;</td>
-            <td>&#9817;</td>
-            <td style="background-color: #817474;">&#9817;</td>
-            <td>&#9817;</td>
-            <td style="background-color: #817474;">&#9817;</td>
-            <td>&#9817;</td>
-            <td style="background-color: #817474; font-size: 180%;">&#9817;</td>
-            <th style="text-align: start;">2</th>
-        </tr>
-        <tr class="figure">
-            <th style="text-align: end;">1</th>
-            <td style="background-color: #817474;">&#9814;</td>
-            <td>&#9816;</td>
-            <td style="background-color: #817474;">&#9815;</td>
-            <td>&#9813;</td>
-            <td style="background-color: #817474;">&#9812;</td>
-            <td>&#9815;</td>
-            <td style="background-color:#817474;">&#9816;</td>
-            <td>&#9814;</td>
-            <th style="text-align:start;">1</th>
-        </tr>
-        <tr style="font-size: 120%;">
-            <th ></th>
-            <th>a</th>
-            <th>b</th> 
-            <th>c</th>
-            <th>d</th>
-            <th>e</th>
-            <th>f</th>
-            <th>g</th>
-            <th>h</th>
-        </tr>
-    </table>
-   </div>         
+        
+         <table>
+            <tr class="letter"> 
+                <th></th>
+                <th>a</th>
+                <th>b</th> 
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+                <th></th>
+            </tr>
+            <tr class="figure number">
+                <th>8</th>
+                <td class="white">&#9820;</td>
+                <td class="black">&#9822;</td>
+                <td class="white">&#9821;</td>
+                <td class="black">&#9819;</td>
+                <td class="white">&#9818;</td>
+                <td class="black">&#9821;</td>
+                <td class="white">&#9822;</td>
+                <td class="black">&#9820;</td>
+                <th>8</th>
+            </tr>
+            <tr class="pawn number">
+                <th>7</th>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <td class="black">&#9823;</td>
+                <td class="white">&#9823;</td>
+                <th>7</th>
+            </tr>
+            <tr class="number">
+                <th>6</th>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <th>6</th>
+            </tr>
+            <tr class="number">
+                <th>5</th>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <th>5</th>
+            </tr>
+            <tr class="number">
+                <th>4</th>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <th>4</th>
+            </tr>
+            <tr class="number">
+                <th>3</th>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td class="black"></td>
+                <td class="white"></td>
+                <th>3</th>
+            </tr>
+            <tr class="pawn number">
+                <th>2</th>
+                <td class="white">&#9817;</td>
+                <td class="black">&#9817;</td>
+                <td class="white">&#9817;</td>
+                <td class="black">&#9817;</td>
+                <td class="white">&#9817;</td>
+                <td class="black">&#9817;</td>
+                <td class="white">&#9817;</td>
+                <td class="black">&#9817;</td>
+                <th>2</th>
+            </tr>
+            <tr class="figure number">
+                <th>1</th>
+                <td class="black">&#9814;</td>
+                <td class="white">&#9816;</td>
+                <td class="black">&#9815;</td>
+                <td class="white">&#9813;</td>
+                <td class="black">&#9812;</td>
+                <td class="white">&#9815;</td>
+                <td class="black">&#9816;</td>
+                <td class="white">&#9814;</td>
+                <th>1</th>
+            </tr>
+            <tr class="letter">
+                <th></th>
+                <th>a</th>
+                <th>b</th> 
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+                <th></th>
+            </tr>
+        </table>
+           
 </body>
 </html>
