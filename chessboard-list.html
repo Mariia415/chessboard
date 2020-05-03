@@ -1,155 +1,198 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <title>ChessBoard</title> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            .section{                
-               width: 60%;
-               margin: 0 20%;               
-              }
-            ul.row{
-                display:inline-block;
-                width: 100%;
-                list-style-type: none;
-                margin: -2px;
-            }
-            li.col{
-                float: left;
-                width: 50px;
-                height: 50px;
-                text-align: center;
-             }
-             li.white{background-color: #fff; border: 1px solid #000;}
-             li.black{background-color: #c3bebe; border: 1px solid #000;}
-             li.symbol{font-size: 200%;}
-             li.letter{font-size: 2vw; }
-             li.number{ font-size: 2vw;}
-        </style>
+        <link rel="stylesheet" href="chessboard-common.css">
     </head> 
     
     <body>
-      <div class="section">
+      <!--<div class="section">-->
             <ul class="row">
-                <li class="col letter"></li>
-                <li class="col letter">A</li>
-                <li class="col letter">B</li>
-                <li class="col letter">C</li>
-                <li class="col letter">D</li>
-                <li class="col letter">E</li>
-                <li class="col letter">F</li>
-                <li class="col letter">G</li>
-                <li class="col letter">H</li>
-                <li class="col letter" ></li>
+                <li class="column first"></li>
+                <li class="column first">
+                   <div class="letter"> A</div>
+                </li>
+                <li class="column first">
+                    <div class="letter"> B</div>
+                </li>
+                <li class="column first">
+                    <div class="letter"> C</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> D</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> E</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> F</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> G</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> H</div>
+                </li>
+                <li class="column first "></li>
             </ul> 
             <ul class="row"> 
-                <li class="col number" >8</li>
-                <li class="col white symbol" >&#9820;</li>
-                <li class="col black symbol" >&#9822;</li>
-                <li class="col white symbol">&#9821;</li>
-                <li class="col black symbol">&#9819;</li>
-                <li class="col white symbol">&#9820;</li>
-                <li class="col black symbol">&#9821;</li>
-                <li class="col white symbol">&#9822;</li>
-                <li class="col black symbol">&#9820;</li>
-                <li class="col number">8</li>
+                <li class="column first">
+                    <div class="letter">8</div> 
+                </li>
+                <li class="column white symbol" >&#9820;</li>
+                <li class="column black symbol" >&#9822;</li>
+                <li class="column white symbol">&#9821;</li>
+                <li class="column black symbol">&#9819;</li>
+                <li class="column white symbol">&#9820;</li>
+                <li class="column black symbol">&#9821;</li>
+                <li class="column white symbol">&#9822;</li>
+                <li class="column black symbol">&#9820;</li>
+                <li class="column first">
+                    <div class="letter">8</div> 
+                </li>
             </ul>
             <ul class="row">
-                <li class="col number">7</li>
-                <li class="col black symbol">&#9823;</li>
-                <li class="col white symbol">&#9823;</li>
-                <li class="col black symbol">&#9823;</li>
-                <li class="col white symbol">&#9823;</li>
-                <li class="col black symbol">&#9823;</li>
-                <li class="col white symbol">&#9823;</li>
-                <li class="col black symbol">&#9823;</li>
-                <li class="col white symbol">&#9823;</li>
-                <li class="col number">7</li>
+                <li class="column first">
+                    <div class="letter">7</div> 
+                </li>
+                <li class="column black symbol">&#9823;</li>
+                <li class="column white symbol">&#9823;</li>
+                <li class="column black symbol">&#9823;</li>
+                <li class="column white symbol">&#9823;</li>
+                <li class="column black symbol">&#9823;</li>
+                <li class="column white symbol">&#9823;</li> 
+                <li class="column black symbol">&#9823;</li>
+                <li class="column white symbol">&#9823;</li>
+                <li class="column first">
+                    <div class="letter">7</div> 
+                </li>
             </ul>
             <ul class="row ">
-                <li class="col number">6</li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li> 
-                <li class="col black"></li>
-                <li class="col number">6</li>      
+                <li class="column first">
+                    <div class="letter">6</div> 
+                </li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li> 
+                <li class="column black"></li>
+                <li class="column first">
+                    <div class="letter">6</div> 
+                </li>    
             </ul>
             <ul class="row" >
-                <li class="col number">5</li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li> 
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col number">5</li>
+                <li class="column first">
+                    <div class="letter">5</div> 
+                </li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li> 
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column first">
+                    <div class="letter">5</div> 
+                </li>
             </ul>
             <ul class="row ">
-                <li class="col number">4</li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li> 
-                <li class="col black"></li>
-                <li class="col number">4</li>      
+                <li class="column first">
+                    <div class="letter">4</div> 
+                </li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li> 
+                <li class="column black"></li>
+                <li class="column first">
+                    <div class="letter">4</div> 
+                </li>  
             </ul>
             <ul class="row symbols" >
-                <li class="col number">3</li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col black"></li>
-                <li class="col white"></li> 
-                <li class="col black"></li>
-                <li class="col white"></li>
-                <li class="col number">3</li>
+                <li class="column first">
+                    <div class="letter">3</div> 
+                </li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column black"></li>
+                <li class="column white"></li> 
+                <li class="column black"></li>
+                <li class="column white"></li>
+                <li class="column first">
+                    <div class="letter">3</div> 
+                </li>
             </ul>
             <ul class="row ">
-                <li class="col number">2</li>
-                <li class="col white symbol">&#9817;</li>
-                <li class="col black symbol">&#9817;</li>
-                <li class="col white symbol">&#9817;</li>
-                <li class="col black symbol">&#9817;</li>
-                <li class="col white symbol">&#9817;</li>
-                <li class="col black symbol">&#9817;</li>
-                <li class="col white symbol">&#9817;</li>
-                <li class="col black symbol">&#9817;</li>
-                <li class="number col">2</li>
+                <li class="column first">
+                    <div class="letter">2</div> 
+                </li>
+                <li class="column white symbol">&#9817;</li>
+                <li class="column black symbol">&#9817;</li>
+                <li class="column white symbol">&#9817;</li>
+                <li class="column black symbol">&#9817;</li>
+                <li class="column white symbol">&#9817;</li>
+                <li class="column black symbol">&#9817;</li>
+                <li class="column white symbol">&#9817;</li>
+                <li class="column black symbol">&#9817;</li>
+                <li class="column first">
+                    <div class="letter">2</div> 
+                </li>
             </ul>
             <ul class="row">
-                <li class="number col">1</li>
-                <li class="col black symbol">&#9814;</li>
-                <li class="col white symbol">&#9816;</li>
-                <li class="col black symbol">&#9815;</li>
-                <li class="col white symbol">&#9813;</li>
-                <li class="col black symbol">&#9812;</li>
-                <li class="col white symbol">&#9815;</li>
-                <li class="col black symbol">&#9816;</li>
-                <li class="col white symbol">&#9814;</li>        
-                <li class="col number">1</li>
+                <li class="column first">
+                    <div class="letter">1</div> 
+                </li>
+                <li class="column black symbol">&#9814;</li>
+                <li class="column white symbol">&#9816;</li>
+                <li class="column black symbol">&#9815;</li>
+                <li class="column white symbol">&#9813;</li>
+                <li class="column black symbol">&#9812;</li>
+                <li class="column white symbol">&#9815;</li>
+                <li class="column black symbol">&#9816;</li>
+                <li class="column white symbol">&#9814;</li>        
+                <li class="column first">
+                    <div class="letter">1</div> 
+                </li>
             </ul>
             <ul class="row">
-                <li class="col letter"></li>
-                <li class="col letter">A</li>
-                <li class="col letter">B</li>
-                <li class="col letter">C</li>
-                <li class="col letter">D</li>
-                <li class="col letter">E</li>
-                <li class="col letter">F</li>
-                <li class="col letter">G</li>
-                <li class="col letter">H</li>
-                <li class="col letter" ></li>
+                <li class="column first"></li>
+                <li class="column first">
+                   <div class="letter"> A</div>
+                </li>
+                <li class="column first">
+                    <div class="letter"> B</div>
+                </li>
+                <li class="column first">
+                    <div class="letter"> C</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> D</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> E</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> F</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> G</div>
+                </li>
+                <li class="column first ">
+                    <div class="letter"> H</div>
+                </li>
+                <li class="column first " ></li>
             </ul> 
-     </div>      
+     <!--</div>   -->   
    </body>
 </html>
 
