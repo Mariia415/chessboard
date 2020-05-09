@@ -1,19 +1,32 @@
 
 
-*{padding: 0;
+html{
+    padding: 0;
     margin: 0;
 }
-/*---COMON----*/
-.column{
-    width: 50px;
-    height: 50px;
-    float: left;
-    
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
 }
+/*---COMON----*/
+.row{
+    float: left;
+    width: 100%;
+}
+.column{
+    width: 45px;
+    height: 45px;
+    float: left;
+    border: 1px solid #9c5618;
+}
+
 .first{
     position: relative;
     color:#9c5518 ;
     font-weight: 900;
+    border: 1px solid #9c561800;
 }
 .white{
     background-color:#F8EFBA;
@@ -29,20 +42,18 @@
     right: 5px;
     font-size: 120%;
 }
+.piece{
+    font-size: 200%; 
+    text-align: center;
+}
 
 /*---CHESSBOARD DIV--*/
 .board{
-    width: 400px;
-    height: 400px;
+    width: 376px;
+    height: 376px;
     border: 3px solid #9c5518;
-    margin: 100px auto;
-    text-align: center; 
 }
 
-div.row{
-    float: left;
-    width: 100%;
-}
 .number{
     text-align: left; 
     font-weight: 900;  
@@ -55,5 +66,7 @@ ul.row{
     margin: 0 30%;
     list-style-type: none;
 }
-.symbol{font-size: 200%; text-align: center;}
- 
+/*---CHESSBOARD-TABLE---*/
+.board-table{
+    border-collapse: collapse;
+}
