@@ -1,9 +1,9 @@
 # chessboard
 
 
-## Training project where different approaches used to create same looking chessboard 
+## chessboard is HTML/CSS training project where different approaches used to create same looking chessboards 
 </br>
-</br>
+
 
 - Each html file contains different mark up, approach reflected in files' names e.g. `chessboard-div.html` means that mark up built on `<div>` elements
 </br>
